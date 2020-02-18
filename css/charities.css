@@ -1,0 +1,41 @@
+.top {
+  margin-top: 36px;
+}
+
+.filter {
+  background: #fff;
+  padding: 20px 30px;
+  font-size: 14px;
+  justify-content: space-between;
+}
+
+.filter__categories {
+  text-align: center;
+  height: 38px;
+  line-height: 38px;
+}
+
+.filter__categories ul {
+
+}
+
+li.category {
+  display: inline-block;
+}
+
+li.category a {
+  color: #757575;
+  padding: 10px 12px;
+  border-radius: 7px;
+  line-height: 1;
+  transition: all .1s ease-in-out;
+}
+
+li.category a:hover {
+  background: rgba(58,139,187,0.15);
+  color: #3a8bbb;
+}
+
+.wrap {
+  background-color: #f4f4f4;
+}

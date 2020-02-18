@@ -1,7 +1,8 @@
 console.log("search");
 
-document.querySelector('#searchInput').addEventListener('keypress', function (e) {
+document.querySelector('#searchBox').addEventListener('keypress', function (e) {
+    inputValue = document.getElementById('searchBox').value;
     if (e.key === 'Enter') {
-      window.location.href = "charity_list.html";
+      window.location.href = `charity_list.html?search=${inputValue}`;
     }
 });

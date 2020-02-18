@@ -4,8 +4,46 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/extras.css">
+<link rel="stylesheet" href="css/charities.css">
+<link rel="stylesheet" href="css/_search_box.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
 <body>
-  <h1>Charity List</h1>
+  <div class="top">
+    <div class="search">
+      <div type="text" class="search__box">
+        <i class="fas fa-search"></i>
+        <input id="searchBox" type="text" placeholder="Search a zip code or your address" name="">
+      </div>
+      <div class="search__button"></div>
+    </div>
+  </div>
+  <div class="filter">
+    <div class="filter__categories">
+      <ul>
+        <li class="category">
+          <a href="charity_list.html?categories=all">All</a>
+        </li>
+        <li class="category">
+          <a href="charity_list.html?categories=all">Animals</a>
+        </li>
+        <li class="category">
+          <a href="charity_list.html?categories=all">Environment</a>
+        </li>
+        <li class="category">
+          <a href="charity_list.html?categories=all">Research</a>
+        </li>
+        <li class="category">
+          <a href="charity_list.html?categories=all">Women</a>
+        </li>
+        <li class="category">
+          <a href="charity_list.html?categories=all">STEM</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+  </div>
+<script type="text/javascript" src="./js/charities.js"></script>
 </body>
 </html>
