@@ -36,6 +36,45 @@ li.category a:hover {
   color: #3a8bbb;
 }
 
-.wrap {
-  background-color: #f4f4f4;
+.charity-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.charity-cards > div{
+  font-size: 20px;
+  color: white;
+  background-color: #3a8bbb;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.charity-cards > div > p {
+  justify-self: flex-end;
+  text-align: center;
+} 
+
+.charity-cards > div > div{
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+}
+
+.charity-cards > div > div > img {
+  max-width: 200px;
+  max-height: 200px;
+  justify-self: center;
+  border: 10px solid white ;
 }
