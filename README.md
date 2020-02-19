@@ -1,2 +1,2 @@
-# project5
+# project
 Basic instructions go here.
