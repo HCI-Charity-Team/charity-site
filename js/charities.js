@@ -53,13 +53,8 @@ buttons_arr.forEach(function(button, index, array){
         filter_charities(clist, cause)
     };
 });
-    
-        
 
 
-
-
-// GET ARRAY OF ALL CATEGORY OBJECTS VIA querySelectorAll, THEN DO THE ABOVE CODE ON EVERY ELEMENT TO GET CAUSE NAME OF BUTTON
-
-filter_charities(clist, 'all');
+//filter_charities(clist, 'all');
+//buttons_arr[0].click();
 
