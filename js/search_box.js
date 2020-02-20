@@ -6,3 +6,4 @@ document.querySelector('#searchBox').addEventListener('keypress', function (e) {
       window.location.href = `charity_list.html?search=${inputValue}`;
     }
 });
+

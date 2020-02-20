@@ -7,13 +7,13 @@
     {"name":"Impact Behavioral Health Partners", "geo":"", "des":"","category":"mental health"},
     {"name":"The Rotary Foundation of Rotary International", "geo":"", "des":"","category":"international"},
     {"name":"Kidney Cancer Association", "geo":"", "des":"","category":"health"},
-    {"name":"Field Ready Inc", "geo":"", "des":"","category":"public/societal benefit"},
+    {"name":"Field Ready Inc", "geo":"", "des":"","category":"public"},
     {"name":"YWCA Evanston North Shore", "geo":"", "des":"","category":"advocacy"},
     {"name":"Infant Welfare Society of Evanston, Inc", "geo":"", "des":"","category":"human services"},
-    {"name":"Living Earth Television NFP", "geo":"", "des":"","category":"arts/culture"},
+    {"name":"Living Earth Television NFP", "geo":"", "des":"","category":"arts"},
     {"name":"Allowance of Good", "geo":"", "des":"","category":"international"},
     {"name":"Learning Bridge Early Education Center", "geo":"", "des":"","category":"education"},
-    {"name":"Evanston Environmental Association", "geo":"", "des":"","category":"environment/animals"},
+    {"name":"Evanston Environmental Association", "geo":"", "des":"","category":"environment"},
     {"name":"Girls Play Sports, Inc", "geo":"", "des":"", "category":"education"},
     {"name":"Youth Job Center Inc", "geo":"", "des":"", "category":"other"}
 ]}
