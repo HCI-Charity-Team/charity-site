@@ -19,17 +19,17 @@ li.category {
   display: inline-block;
 }
 
+li.category.active a {
+  background: rgba(58,139,187,0.15);
+  color: #3a8bbb;
+}
+
 li.category a {
   color: #757575;
   padding: 10px 12px;
   border-radius: 7px;
   line-height: 1;
   transition: all .1s ease-in-out;
-}
-
-li.category a.active {
-  background: rgba(58,139,187,0.15);
-  color: #3a8bbb;
 }
 
 li.category a:hover {
