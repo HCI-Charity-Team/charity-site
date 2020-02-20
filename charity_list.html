@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>Charity List</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/extras.css">
+<link rel="stylesheet" href="css/charities.css">
+<link rel="stylesheet" href="css/_search_box.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+<body>
+  <div class="top">
+    <div class="search">
+      <div type="text" class="search__box">
+        <i class="fas fa-search"></i>
+        <input id="searchBox" type="text" placeholder="Search a zip code, your address or general interest" name="">
+      </div>
+      <div class="search__button"></div>
+    </div>
+  </div>
+  <div class="filter">
+    <div class="filter__categories">
+      <ul>
+        <li class="category active">
+          <a>All</a>
+        </li>
+        <li class="category">
+          <a>Mental Health</a>
+        </li>
+        <li class="category">
+          <a>Human Services</a>
+        </li>
+        <li class="category">
+          <a>Education</a>
+        </li>
+        <li class="category">
+          <a>International</a>
+        </li>
+        <li class="category">
+          <a>Art/Culture</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <ol class="charity-cards"></ol>
+  </div>
+<script type="text/javascript" src="./js/charities.js"></script>
+</body>
+</html>
