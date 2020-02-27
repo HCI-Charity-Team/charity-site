@@ -10,12 +10,12 @@
 <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
 <body>
 
-<form class="needs-validation" novalidate>
+<form>
   <h3 class="title">Basic Information</h3>
   <hr>
   <div class="form-row">
     <div class="col-md-4 mb-3">
-      <label for="name">Charity Name</label>
+      <label for="name" pattern="[A-Za-z0-9]">Charity Name</label>
       <input type="text" class="form-control" id="name" placeholder="Charity Name" value="" required>
       <div class="valid-feedback">
         Looks good!
@@ -28,7 +28,7 @@
       <span class="input-group-text">Upload</span>
     </div>
     <div class="custom-file">
-      <input type="file" class="custom-file-input" id="inputGroupFile01" required>
+      <input type="file" class="custom-file-input" id="fileUpload" required accept="image/x-png,image/gif,image/jpeg">
       <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
     </div>
   </div>
@@ -60,7 +60,7 @@
     <div class="input-group-prepend">
       <span class="input-group-text" id="basic-addon3">https://</span>
     </div>
-    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" pattern="^(http[s]?:\/\/)?([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2}(\/([-~%\.\(\)\w\d]*\/*)*(#[-\w\d]+)?)?$" required>
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
@@ -79,13 +79,13 @@
     </div>
     <div class="col-md-3 mb-3">
       <label for="zip">Zip Code</label>
-      <input type="text" class="form-control" id="zip" placeholder="Zip" required>
+      <input type="postal-code" class="form-control" id="zip" placeholder="Zip" pattern="(^\d{5}$)|(^\d{9}$)|(^\d{5}-\d{4}$)" required>
       <div class="invalid-feedback">
         Please provide a valid zip.
       </div>
     </div>
   </div>
-  <button class="btn btn-primary submit-button" type="submit">Submit form</button>
+  <button class="btn btn-primary submit-button" type="submit" value="Validate">Submit form</button>
 </form>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
