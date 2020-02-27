@@ -22,7 +22,7 @@ let charities = jsonObj["organizations"];
 
 for(charity of charities){
   const template = `
-    <li class="group">
+    <li class="group" onclick="window.location.href='profile.html'">
       <div class="charity">
         <div class="logo">
         <img src=${charity.img} alt=${charity.name}>
@@ -51,7 +51,7 @@ function filter_charities(charity_list, cause) {
   for (org of charity_list.organizations) {
     if ((org.category === cause) || (cause === 'all')) {
       template += `
-        <li class="group">
+        <li class="group" onclick="window.location.href='profile.html'>
           <div class="charity">
             <div class="logo">
             <img src=${org.img} alt=${org.name}>
