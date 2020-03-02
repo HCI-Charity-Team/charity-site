@@ -1,0 +1,52 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.auth-sidebar header {
+  padding: 64px 64px 30px 64px
+}
+
+.auth-sidebar header .name {
+  color: #966863;
+  font-size: 22px;
+}
+
+.auth-sidebar .content {
+  flex-grow: 1;
+}
+
+.auth-sidebar .content img {
+  width: 100%;
+}
+
+.auth-sidebar {
+  color: #966863;
+  background-color: #FFEBE9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 514px;
+}
+
+.auth-content {
+  flex:1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.auth-content h2 {
+  text-align: center;
+}
+
+#loader {
+  text-align: center;
+}

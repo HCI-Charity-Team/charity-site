@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>Find Charities</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/extras.css">
+<link rel="stylesheet" href="css/sign_up.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+<body>
+  <div class="container">
+    <section class="auth-sidebar">
+      <header>
+        <a class="name" href="/">Sharity</a>
+        <h1>Discover the nearby charities.</h1>
+      </header>
+      <div class="content">
+        <img src="./images/logo_sign_in.png" alt="logo_image">
+      </div>
+    </section>
+    <section class="auth-content">
+      <h2>Sign in to Sharity</h2>
+      <div id="firebaseui-auth-container"></div>
+      <div id="loader">Loading...</div>
+    </section>
+  </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-database.js"></script>
+
+<script type="text/javascript" src="./js/firebase/init.js"></script>
+
+<script>
+  // Initialize the FirebaseUI Widget using Firebase.
+  var ui = new firebaseui.auth.AuthUI(firebase.auth());
+
+  ui.start('#firebaseui-auth-container', {
+    signInOptions: [
+      firebase.auth.EmailAuthProvider.PROVIDER_ID,
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+      firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+      firebase.auth.GithubAuthProvider.PROVIDER_ID
+    ],
+    // Other config options...
+  });
+
+  var uiConfig = {
+    callbacks: {
+      signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+        // User successfully signed in.
+        // Return type determines whether we continue the redirect automatically
+        // or whether we leave that to developer to handle.
+        return true;
+      },
+      uiShown: function() {
+        // The widget is rendered.
+        // Hide the loader.
+        document.getElementById('loader').style.display = 'none';
+      }
+    },
+    // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
+    signInFlow: 'popup',
+    signInSuccessUrl: '<url-to-redirect-to-on-success>',
+    signInOptions: [
+      // Leave the lines as is for the providers you want to offer your users.
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      firebase.auth.EmailAuthProvider.PROVIDER_ID
+    ],
+    // Terms of service url.
+    tosUrl: 'terms_of_service.html',
+    // Privacy policy url.
+    privacyPolicyUrl: 'terms_of_service.html'
+  };
+
+  // The start method will wait until the DOM is loaded.
+  ui.start('#firebaseui-auth-container', uiConfig);
+</script>
+</body>
+</html>

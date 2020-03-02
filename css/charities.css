@@ -1,12 +1,16 @@
 .header {
   width: 100vw;
-  height: 50px;
+  height: 66px;
   background-color: #333;
   display: flex;
   flex-wrap: row;
   padding-left: 40px;
   padding-right: 40px;
   box-sizing: border-box;
+}
+
+.header__logo {
+  flex: 1;
 }
 
 .header .nav {

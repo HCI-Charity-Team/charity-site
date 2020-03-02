@@ -1,0 +1,10 @@
+.container {
+  margin: 0 100px;
+  padding: 0 50px;
+}
+
+p {
+  color: #76787f;
+  font-weight: 300;
+  line-height: 24px;
+}
