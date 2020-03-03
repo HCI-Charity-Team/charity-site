@@ -37,7 +37,7 @@ for(charity of charities){
   document.querySelector('.charity-cards').innerHTML += template;
 }
 
-urlParams = new URLSearchParams(window.location.search);
+const urlParams = new URLSearchParams(window.location.search);
 document.getElementById('searchBox').value = urlParams.get('search')
 
 const local_path = './data/';

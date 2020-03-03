@@ -12,19 +12,30 @@
 <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 <body>
 <div class="top">
-  <a href="sign_up.html" class="top__btn about">Create Account</a>
+  <a href="sign_up.html?as=individual" class="top__btn about">Create Account</a>
 </div>
 <div class="container">
-  <div class="logo">
-    <img src="./images/logo.png" alt="">
-  </div>
-  <div class="search">
-    <div type="text" class="search__box">
-      <i class="fas fa-search"></i>
-      <input id="searchBox" type="text" placeholder="Search a zip code or your address" name="">
+  <section class="left-side">
+    <div class="content">
+      <div class="logo">
+        <img src="./images/charity_logo.jpg" alt="charity_logo">
+      </div>
+      <h1>Extra Helps Your charity Deserves</h1>
+      <a href="sign_up.html?as=charity">Add Your Charity</a>
     </div>
-    <div class="search__button"></div>
-  </div>
+  </section>
+  <section class="right-side">
+    <div class="logo">
+      <img src="./images/logo.png" alt="">
+    </div>
+    <div class="search">
+      <div type="text" class="search__box">
+        <i class="fas fa-search"></i>
+        <input id="searchBox" type="text" placeholder="Search a zip code or your address" name="">
+      </div>
+      <div class="search__button"></div>
+    </div>
+  </section>
 </div>
 <script type="text/javascript" src="./js/search_box.js"></script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->

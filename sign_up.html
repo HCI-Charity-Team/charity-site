@@ -14,14 +14,17 @@
     <section class="auth-sidebar">
       <header>
         <a class="name" href="/">Sharity</a>
-        <h1>Discover the nearby charities.</h1>
+        <h1 id="slogan">Discover the nearby charities.</h1>
       </header>
       <div class="content">
-        <img src="./images/logo_sign_in.png" alt="logo_image">
+        <img id="sloganImage" src="" alt="logo_image">
       </div>
     </section>
     <section class="auth-content">
-      <h2>Sign in to Sharity</h2>
+      <div class="top">
+        <a href="?as=charity">I'm not a charity. &nbsp Sign in as an individual </a>
+      </div>
+      <h2 id='role'>Sign in to Sharity</h2>
       <div id="firebaseui-auth-container"></div>
       <div id="loader">Loading...</div>
     </section>
@@ -35,6 +38,7 @@
 <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-database.js"></script>
 
 <script type="text/javascript" src="./js/firebase/init.js"></script>
+<script type="text/javascript" src="./js/sign_up.js"></script>
 
 <script>
   // Initialize the FirebaseUI Widget using Firebase.

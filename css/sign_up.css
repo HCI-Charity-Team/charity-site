@@ -20,6 +20,7 @@ body {
 
 .auth-sidebar .content {
   flex-grow: 1;
+  padding-top: 5%;
 }
 
 .auth-sidebar .content img {
@@ -27,7 +28,7 @@ body {
 }
 
 .auth-sidebar {
-  color: #966863;
+  color: #945A54;
   background-color: #FFEBE9;
   display: flex;
   flex-direction: column;
@@ -49,4 +50,10 @@ body {
 
 #loader {
   text-align: center;
+}
+
+.top {
+  position: absolute;
+  top: 26px;
+  right: 30px;
 }
