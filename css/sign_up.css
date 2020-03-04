@@ -57,3 +57,12 @@ body {
   top: 26px;
   right: 30px;
 }
+
+.top a {
+  text-decoration: underline;
+  padding: 8px 20px;
+}
+
+.top a:hover {
+  background-color: #eee;
+}

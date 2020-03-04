@@ -12,10 +12,13 @@ body {
   margin: 0 10px;
   padding: 10px;
   display: inline-block;
+  background-color: #2D326C;
+  color: #fff;
+  border-radius: 6px;
 }
 
-.top .top__about:hover {
-  background: #ddd;
+.top .top__btn:hover {
+  background-color: #1F2454;
 }
 
 .container {
@@ -25,12 +28,12 @@ body {
 }
 
 .left-side {
-  flex: 1;
+  flex: .9;
   color: #fff;
-  padding: 0 90px 0 90px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-right: 36px;
 }
 
 .left-side .content {
@@ -40,6 +43,7 @@ body {
   border-radius: 18px;
   box-sizing: border-box;
   background-color: #FE5757;
+  margin-left: 90px;
 }
 
 .left-side .content h1 {
@@ -88,4 +92,10 @@ body {
 
 .logo img {
   width: 100%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .left-side .content h1 {
+    font-size: 30px;
+  }
 }
