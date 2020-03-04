@@ -14,7 +14,7 @@
     <section class="auth-sidebar">
       <header>
         <a class="name" href="/">Sharity</a>
-        <h1 id="slogan">Discover the nearby charities.</h1>
+        <h1 id="slogan">Discover nearby charities.</h1>
       </header>
       <div class="content">
         <img id="sloganImage" src="" alt="logo_image">
@@ -71,7 +71,7 @@
     },
     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
     signInFlow: 'popup',
-    signInSuccessUrl: '<url-to-redirect-to-on-success>',
+    signInSuccessUrl: 'user_profile.html',
     signInOptions: [
       // Leave the lines as is for the providers you want to offer your users.
       firebase.auth.GoogleAuthProvider.PROVIDER_ID,
