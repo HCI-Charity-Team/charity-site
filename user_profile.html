@@ -7,30 +7,45 @@
     <link rel="stylesheet" href="css/extras.css">
     <link rel="stylesheet" href="css/charities.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="css/search_box.css">
+    <!-- <link rel="stylesheet" href="css/search_box.css"> -->
     <body>
-        <div class="top dashboard">
-                <h1 class="home" onclick="window.location.href='index.html'">Sharity.io</h1>
-                <div class="search">
-                    <div type="text" class="search__box">
-                      <i class="fas fa-search"></i>
-                      <input style="color: white;" id="searchBox" type="text" placeholder="Search a zip code, your address or general interest" name="">
-                    </div>
-                    <div class="search__button"></div>
-                </div>
+        <div class="header">
+            <div class="header__logo">
+                <a href="index.html">Sharity.io</a>
+            </div>
+            <div class="nav">
                 <div class="user">
-                    <img src="https://img1.wikia.nocookie.net/__cb20140209140937/spudroosi/images/thumb/b/bb/Default_channel_icon.png/500px-Default_channel_icon.png" 
+                    <h3 id="userName">Hello</h3>
+                    <img id="userAvatar" src="https://img1.wikia.nocookie.net/__cb20140209140937/spudroosi/images/thumb/b/bb/Default_channel_icon.png/500px-Default_channel_icon.png"
                     alt="user icon"
                     style="
                     height:50px;
-                    margin-right: 10px;
                     border-radius: 25px;">
-                    <h3>Hello, user!</h3>
                 </div>
+            </div>
         </div>
+        <!-- <div class="top dashboard">
+            <h1 class="home" onclick="window.location.href='index.html'">Sharity.io</h1>
+            <div class="search">
+                <div type="text" class="search__box">
+                  <i class="fas fa-search"></i>
+                  <input style="color: white;" id="searchBox" type="text" placeholder="Search a zip code, your address or general interest" name="">
+                </div>
+                <div class="search__button"></div>
+            </div>
+            <div class="user">
+                <img src="https://img1.wikia.nocookie.net/__cb20140209140937/spudroosi/images/thumb/b/bb/Default_channel_icon.png/500px-Default_channel_icon.png"
+                alt="user icon"
+                style="
+                height:50px;
+                margin-right: 10px;
+                border-radius: 25px;">
+                <h3>Hello, user!</h3>
+            </div>
+        </div> -->
         <h1 style="margin: 50px; margin-bottom: 0px;">Your Dashboard</h1>
         <div class=wrap>
-            <div class="info-card user-items"> 
+            <div class="info-card user-items">
                 <h2>Charity Posts</h2>
                 <ol class = "posts">
                     <li class = "post">
@@ -47,7 +62,7 @@
                         <h3 onclick="window.location.href='profile.html'">Fabretto Children's Foundation</h3>
                             <h4>Funraiser Staff Needed</h4>
                             <p>
-                                We're looking for staff to help us with our next fundraiser event on March 3, 2020. Single-day time commitment, lunch provided. 
+                                We're looking for staff to help us with our next fundraiser event on March 3, 2020. Single-day time commitment, lunch provided.
                                 </br>
                                 </br>
                                 No training necessary. Contact us via email for further information.
@@ -59,7 +74,7 @@
                         <h3 onclick="window.location.href='profile.html'">Alliance of Hope for Suicide Loss Suicide</h3>
                             <h4>Counselor Greatly Needed</h4>
                             <p>
-                                We're looking for trained counselors with professional experience. 
+                                We're looking for trained counselors with professional experience.
                                     </br>
                                     </br>
                                     Part-time position, PsyD preferred. Contact us via email for further information.
@@ -68,13 +83,22 @@
                         <button>Save Post</button>
                     </li>
                 </ol>
-            </div>  
-            <div class="info-card user-items"> 
+            </div>
+            <div class="info-card user-items">
                 <h2>Suggested Charities</h2>
                 <ol class="charity-cards"></ol>
             </div>
         </div>
-        <script type="text/javascript" src="./js/search_box.js"></script>
+        <!-- <script type="text/javascript" src="./js/search_box.js"></script> -->
         <script type="text/javascript" src="./js/user_profile.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-database.js"></script>
+        <script type="text/javascript" src="./js/firebase/init.js"></script>
+        <script type="text/javascript" src="./js/firebase/auth.js"></script>
     </body>
 </html>

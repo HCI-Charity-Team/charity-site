@@ -44,13 +44,6 @@
   background-color: #1F2454;
 }
 
-.header .logo {
-  flex: 1;
-  color: #fff;
-  line-height: 50px;
-  font-size: 30px;
-}
-
 .top {
   margin-top: 36px;
 }
