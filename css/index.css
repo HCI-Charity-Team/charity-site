@@ -3,77 +3,10 @@ body {
   width: 100vw;
 }
 
-.top {
-  text-align: right;
-  margin: 10px 0;
-}
-
-.top .top__btn {
-  margin: 0 10px;
-  padding: 10px;
-  display: inline-block;
-  background-color: #2D326C;
-  color: #fff;
-  border-radius: 6px;
-}
-
-.top .top__btn:hover {
-  background-color: #1F2454;
-}
-
 .container {
   display: flex;
   flex-direction: row;
   height: calc(100vh - 200px);
-}
-
-.left-side {
-  flex: .9;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-right: 36px;
-}
-
-.left-side .content {
-  height: 460px;
-  letter-spacing: 1px;
-  padding: 30px 100px;
-  border-radius: 18px;
-  box-sizing: border-box;
-  background-color: #FE5757;
-  margin-left: 90px;
-}
-
-.left-side .content h1 {
-  font-size: 40px;
-  margin: 0;
-  margin-bottom: 10px;
-}
-
-.left-side .content a {
-  width: 100%;
-  height: 66px;
-  background-color: #fff;
-  display: inline-block;
-  border-radius: 6px;
-  line-height: 66px;
-  text-align: center;
-  font-size: 26px;
-  color: #1D2041;
-  font-weight: 900;
-}
-
-.left-side .content .logo {
-  width: 100%;
-  height: 180px;
-  text-align: center;
-}
-
-.left-side .content img {
-  width: auto;
-  height: 100%;
 }
 
 .right-side {
@@ -94,8 +27,22 @@ body {
   width: 100%;
 }
 
-@media only screen and (max-width: 1440px) {
-  .left-side .content h1 {
-    font-size: 30px;
-  }
+.slogan {
+  color: #2D326C;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.change_role {
+  width: 582px;
+  margin: 0 auto;
+  text-align: right;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.change_role:hover a {
+  color: #2D326C;
 }
