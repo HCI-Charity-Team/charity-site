@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/extras.css">
 <link rel="stylesheet" href="css/charities.css">
+<link rel="stylesheet" href="css/header.css">
 <link rel="stylesheet" href="css/search_box.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
@@ -14,7 +15,7 @@
       <a href="index.html">Sharity.io</a>
     </div>
     <div class="nav">
-      <a href="charity_form.html" class="add-chairty">Add Your Charity</a>
+      <a id="signInBtn" href="sign_up.html?as=individual" class="add-chairty">Sign In</a>
     </div>
   </div>
   <div class="top">
@@ -54,5 +55,17 @@
     <ol class="charity-cards"></ol>
   </div>
 <script type="text/javascript" src="./js/charities.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-database.js"></script>
+
+<script type="text/javascript" src="./js/firebase/init.js"></script>
+<script type="text/javascript" src="./js/firebase/auth.js"></script>
+
 </body>
 </html>

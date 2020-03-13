@@ -1,17 +1,26 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         // User is signed in.
-        var displayName = user.displayName;
-        var email = user.email;
-        var emailVerified = user.emailVerified;
-        var photoURL = user.photoURL;
-        var isAnonymous = user.isAnonymous;
-        var uid = user.uid;
-        var providerData = user.providerData;
-        document.querySelector('#userName').innerHTML = `Hello, ${displayName}`;
-        if (photoURL) {
-            document.querySelector('#userAvatar').src = photoURL;
-        }
+        const displayName = user.displayName;
+        const email = user.email;
+        const emailVerified = user.emailVerified;
+        const photoURL = user.photoURL;
+        const isAnonymous = user.isAnonymous;
+        const uid = user.uid;
+        const providerData = user.providerData;
+
+        const defaultPhotoUrl = "https://img1.wikia.nocookie.net/__cb20140209140937/spudroosi/images/thumb/b/bb/Default_channel_icon.png/500px-Default_channel_icon.png";
+        document.querySelector('#signInBtn').style.display = 'none';
+        const format = `
+            <div class="user">
+                <h3 id="userName">Hello, ${displayName}</h3>
+                <img id="userAvatar" src=${photoURL || defaultPhotoUrl}
+                alt="user icon"
+                style="
+                height:50px;
+                border-radius: 25px;">
+            </div>`
+        document.querySelector('.header .nav').innerHTML = format;
     } else {
         // User is signed out.
         // ...

@@ -44,3 +44,15 @@
 .nav a:hover {
   background-color: #1F2454;
 }
+
+div.user{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.user h3 {
+    margin: 0;
+    margin-right: 20px;
+    color: #2D326C;
+}
