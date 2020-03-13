@@ -6,7 +6,6 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  height: 100%;
 }
 
 .auth-sidebar header {
@@ -65,4 +64,13 @@ body {
 
 .top a:hover {
   background-color: #eee;
+}
+
+.video-wrap {
+  width: 400px;
+  margin: 0 auto;
+}
+
+video {
+  width: 100%;
 }

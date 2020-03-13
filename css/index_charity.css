@@ -75,6 +75,16 @@ body {
   height: 100%;
 }
 
+.change_role {
+  text-align: right;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.change_role:hover a {
+  color: #2D326C;
+}
+
 @media only screen and (max-width: 1024px) {
   .wrapper {
     flex: .6;
