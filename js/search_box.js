@@ -1,5 +1,3 @@
-console.log("search");
-
 document.querySelector('#searchBox').addEventListener('keypress', function (e) {
     inputValue = document.getElementById('searchBox').value;
     if (e.key === 'Enter') {

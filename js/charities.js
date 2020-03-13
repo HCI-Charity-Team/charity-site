@@ -25,12 +25,10 @@ for(charity of charities){
     <li class="group" onclick="window.location.href='profile.html'">
       <div class="charity">
         <div class="logo">
-        <img src=${charity.img} alt=${charity.name}>
+          <img src=${charity.img} alt=${charity.name}>
         </div>
         <div class="name">${charity.name}</div>
-        <div class="tags">
         <div class="tag">${charity.category}</div>
-        </div>
       </div>
     </li>
   `;
@@ -51,15 +49,13 @@ function filter_charities(charity_list, cause) {
   for (org of charity_list.organizations) {
     if ((org.category === cause) || (cause === 'all')) {
       template += `
-        <li class="group" onclick="window.location.href='profile.html'>
+        <li class="group" onclick="window.location.href='profile.html'">
           <div class="charity">
             <div class="logo">
-            <img src=${org.img} alt=${org.name}>
+              <img src=${org.img} alt=${org.name}>
             </div>
             <div class="name">${org.name}</div>
-            <div class="tags">
             <div class="tag">${org.category}</div>
-            </div>
           </div>
         </li>
       `;

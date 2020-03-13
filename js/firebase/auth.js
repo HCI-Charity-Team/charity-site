@@ -21,6 +21,13 @@ firebase.auth().onAuthStateChanged(function(user) {
                 border-radius: 25px;">
             </div>`
         document.querySelector('.header .nav').innerHTML = format;
+
+        currentPage = window.location.pathname;
+
+        if (currentPage == '/index.html') {
+            document.querySelector('.change_role').style.display = 'none';
+        }
+
     } else {
         // User is signed out.
         // ...
