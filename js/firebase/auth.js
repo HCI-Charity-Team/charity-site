@@ -18,7 +18,12 @@ firebase.auth().onAuthStateChanged(function(user) {
                 alt="user icon"
                 style="
                 height:50px;
-                border-radius: 25px;">
+                border-radius: 25px;"
+                type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Profile</button>
+                    <button class="dropdown-item" type="button">Log out</button>
+                </div>
             </div>`
         document.querySelector('.header .nav').innerHTML = format;
 

@@ -70,7 +70,7 @@ li.group {
 }
 
 .charity:hover .name {
-  border-bottom: 1px solid #222;
+  text-decoration: underline;
 }
 
 .logo {
@@ -89,7 +89,7 @@ li.group {
   font-size: 16px;
   font-weight: 900;
   margin: 16px 0;
-  display: inline-block;
+  display: block;
   border-bottom: 1px solid transparent;
 }
 
