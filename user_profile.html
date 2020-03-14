@@ -1,103 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <title>Dashboard</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="css/extras.css">
-    <link rel="stylesheet" href="css/charities.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <!-- <link rel="stylesheet" href="css/search_box.css"> -->
-    <body>
-        <div class="header">
-            <div class="header__logo">
-                <a href="index.html">Sharity.io</a>
-            </div>
-            <div class="nav">
-                <div class="user">
-                    <h3 id="userName">Hello</h3>
-                    <img id="userAvatar" src="https://img1.wikia.nocookie.net/__cb20140209140937/spudroosi/images/thumb/b/bb/Default_channel_icon.png/500px-Default_channel_icon.png"
-                    alt="user icon"
-                    style="
-                    height:50px;
-                    border-radius: 25px;">
-                </div>
-            </div>
+  <title>Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/extras.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/charities.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <!-- <link rel="stylesheet" href="css/search_box.css"> -->
+  <body>
+    <div class="header">
+      <div class="header__logo">
+        <a href="index.html">Sharity.io</a>
+      </div>
+      <div class="nav">
+        <div class="user">
+          <h3 id="userName">Hello</h3>
+          <img id="userAvatar" src="https://img1.wikia.nocookie.net/__cb20140209140937/spudroosi/images/thumb/b/bb/Default_channel_icon.png/500px-Default_channel_icon.png"
+          alt="user icon"
+          style="
+          height:50px;
+          border-radius: 25px;">
         </div>
-        <!-- <div class="top dashboard">
-            <h1 class="home" onclick="window.location.href='index.html'">Sharity.io</h1>
-            <div class="search">
-                <div type="text" class="search__box">
-                  <i class="fas fa-search"></i>
-                  <input style="color: white;" id="searchBox" type="text" placeholder="Search a zip code, your address or general interest" name="">
-                </div>
-                <div class="search__button"></div>
-            </div>
-            <div class="user">
-                <img src="https://img1.wikia.nocookie.net/__cb20140209140937/spudroosi/images/thumb/b/bb/Default_channel_icon.png/500px-Default_channel_icon.png"
-                alt="user icon"
-                style="
-                height:50px;
-                margin-right: 10px;
-                border-radius: 25px;">
-                <h3>Hello, user!</h3>
-            </div>
-        </div> -->
-        <h1 style="margin: 50px; margin-bottom: 0px;">Your Dashboard</h1>
-        <div class=wrap>
-            <div class="info-card user-items">
-                <h2>Charity Posts</h2>
-                <ol class = "posts">
-                    <li class = "post">
-                        <h3 onclick="window.location.href='profile.html'">Learning Bridge Early Education Center</h3>
-                            <h4>Winter Giving Progress Update!</h4>
-                            <p>Wow, you guys continue to amaze us! Since we opened the Winter Giving event on February 1, you smashed through the fundraising target in just under three weeks!</br>
-                                By the apparent popular demand, we're raising the fundraising target from $10,000 to $25,000 by the end of March.</br>
-                                Can you help us meet this new goal? Help us out <a href=https://support.allianceofhope.org/give/47659/#!/donation/checkout style="color:blue;">here</a>.
-                            </p>
-                        <button>Unfavorite Charity</button>
-                        <button>Save Post</button>
-                    </li>
-                    <li class = "post">
-                        <h3 onclick="window.location.href='profile.html'">Fabretto Children's Foundation</h3>
-                            <h4>Funraiser Staff Needed</h4>
-                            <p>
-                                We're looking for staff to help us with our next fundraiser event on March 3, 2020. Single-day time commitment, lunch provided.
-                                </br>
-                                </br>
-                                No training necessary. Contact us via email for further information.
-                            </p>
-                        <button>Unfavorite Charity</button>
-                        <button>Save Post</button>
-                    </li>
-                    <li class="post">
-                        <h3 onclick="window.location.href='profile.html'">Alliance of Hope for Suicide Loss Suicide</h3>
-                            <h4>Counselor Greatly Needed</h4>
-                            <p>
-                                We're looking for trained counselors with professional experience.
-                                    </br>
-                                    </br>
-                                    Part-time position, PsyD preferred. Contact us via email for further information.
-                            </p>
-                        <button>Unfavorite Charity</button>
-                        <button>Save Post</button>
-                    </li>
-                </ol>
-            </div>
-            <div class="info-card user-items">
-                <h2>Suggested Charities</h2>
-                <ol class="charity-cards"></ol>
-            </div>
-        </div>
-        <script type="text/javascript" src="./js/user_profile.js"></script>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+      </div>
+    </div>
+    <h1 style="margin: 50px; margin-bottom: 0px;">Your Dashboard</h1>
+    <div class=wrap>
+      <div class="info-card user-items">
+        <h2>Charity Posts</h2>
+        <ol class = "posts">
+          <li class = "post">
+            <h3 onclick="window.location.href='profile.html'">Learning Bridge Early Education Center</h3>
+              <h4>Winter Giving Progress Update!</h4>
+              <p>Wow, you guys continue to amaze us! Since we opened the Winter Giving event on February 1, you smashed through the fundraising target in just under three weeks!</br>
+                By the apparent popular demand, we're raising the fundraising target from $10,000 to $25,000 by the end of March.</br>
+                Can you help us meet this new goal? Help us out <a href=https://support.allianceofhope.org/give/47659/#!/donation/checkout style="color:blue;">here</a>.
+              </p>
+            <button>Unfavorite Charity</button>
+            <button>Save Post</button>
+          </li>
+          <li class = "post">
+            <h3 onclick="window.location.href='profile.html'">Fabretto Children's Foundation</h3>
+              <h4>Funraiser Staff Needed</h4>
+              <p>
+                We're looking for staff to help us with our next fundraiser event on March 3, 2020. Single-day time commitment, lunch provided.
+                </br>
+                </br>
+                No training necessary. Contact us via email for further information.
+              </p>
+            <button>Unfavorite Charity</button>
+            <button>Save Post</button>
+          </li>
+          <li class="post">
+            <h3 onclick="window.location.href='profile.html'">Alliance of Hope for Suicide Loss Suicide</h3>
+              <h4>Counselor Greatly Needed</h4>
+              <p>
+                We're looking for trained counselors with professional experience.
+                  </br>
+                  </br>
+                  Part-time position, PsyD preferred. Contact us via email for further information.
+              </p>
+            <button>Unfavorite Charity</button>
+            <button>Save Post</button>
+          </li>
+        </ol>
+      </div>
+      <div class="info-card user-items">
+        <h2>Suggested Charities</h2>
+        <ol class="charity-cards"></ol>
+      </div>
+    </div>
+    <script type="text/javascript" src="./js/user_profile.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
 
-        <!-- TODO: Add SDKs for Firebase products that you want to use
-             https://firebase.google.com/docs/web/setup#available-libraries -->
-        <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-database.js"></script>
-        <script type="text/javascript" src="./js/firebase/init.js"></script>
-        <script type="text/javascript" src="./js/firebase/auth.js"></script>
-    </body>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-database.js"></script>
+    <script type="text/javascript" src="./js/firebase/init.js"></script>
+    <script type="text/javascript" src="./js/firebase/auth.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
