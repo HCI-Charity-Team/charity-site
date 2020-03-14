@@ -54,7 +54,7 @@ div.top{
     padding: 20px 30px 0px 30px;
     font-size: 14px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;  
 }
 
 div.info-card{
@@ -118,7 +118,6 @@ li.post > h3{
 
 li.post > h3:hover{
     border-bottom: 1px solid #222;
-    margin: 0px;
 }
 
 li.post > button{
