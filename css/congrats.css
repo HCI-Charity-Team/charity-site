@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  width: 400px;
+}
+
+.des {
+  text-align: center;
+}
+
+.des i {
+  color: blue;
+}
