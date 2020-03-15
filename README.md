@@ -9,7 +9,7 @@ By conducting user interviews, we learned more about how individuals get in touc
 These interviews led us to better envision the sort of users that would use our app. This includes busy students, volunteers eager to share information about their charities, and charities seeking new, effective ways of finding local support. A busy target audience like ours implies that the design should be focused on making the user quickly navigate to the exact thing they need. This suggests a simple design with common visual indications of a search function and where specific organizations’ information can be kept for the user’s use. We found a quick search function with the ability to filter charities by distance and focus to be the best-suited option. The charity profiles should have highly visible contact information and postings of what items and volunteering positions that charities need. These elements would assist users with limited time in finding charities based on their unique needs, interests, and skillsets. We also wanted to make the profile making process and posting to be intuitive for charities. By doing this, the app would be accessible to charity workers with any level of technical knowledge. Our goals were the words: simple, intuitive and fast.
 
 # Paper Prototyping
-![Paper Prototyping 1](/images/im1.png) 
+![Paper Prototyping 1](/images/im1.png)
 ![Paper Prototyping 2](/images/im2.png)
 ![Paper Prototyping 3](/images/im3.png)
 ![Paper Prototyping 4](/images/im4.png)
@@ -59,8 +59,9 @@ https://github.com/HCI-Charity-Team/charity-site
 ### README
 https://github.com/HCI-Charity-Team/charity-site/blob/master/README.md
 
-### Working Version (Github Sites) 
+### Working Version (Github Sites)
 https://hci-charity-team.github.io/charity-site/
 
 ### Instructions
-Best viewed on PCs/laptops on Chrome
+Best viewed on PCs/laptops on Chrome.
+Use the link https://hci-charity-team.github.io/charity-site/index.html to view or simply click index.html to check our work.
