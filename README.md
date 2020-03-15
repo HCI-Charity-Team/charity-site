@@ -1,5 +1,5 @@
-# Charity Group
-GITHUB SITES LINK: https://hci-charity-team.github.io/charity-site/
+# Charity Group (sharity.io)
+**GitHub Sites Link:** https://hci-charity-team.github.io/charity-site/
 # Problem & Related Work
 There’s an existing divide between local charities and community members. Many locals may be interested in becoming involved in donation and volunteer work but may not recognize charities in their local areas. Donors tend to unknowingly over donate specific items while a charity may need other items instead. Local charities thus struggle from not having enough volunteers or a balanced quantity of their supplies. Our team aims to help resolve this struggle by creating a better communication platform between individuals and their nearby charities. By resolving this issue, people in need will have a greater chance of receiving the items and services they need from these nonprofits. Community building can also grow from having locals become more involved with nearby nonprofits.
 Similar but limited solutions have been accomplished by Feeding America and MealConnect, which connect donors with surplus food to their local Feeding America food bank partners. There is also MEANS which serves as a communication platform dedicated to emergency food providers and donors. But, these organizations are solely dedicated to food demand. There still needs to be a means of filling nonprofits’ need for obtaining other items such as hygiene products, winter clothes, and books. These platforms also don’t resolve a charity’s need for volunteers or workers or bring any community involvement either. Therefore, we developed a platform to help these unanswered issues.
@@ -9,8 +9,10 @@ By conducting user interviews, we learned more about how individuals get in touc
 These interviews led us to better envision the sort of users that would use our app. This includes busy students, volunteers eager to share information about their charities, and charities seeking new, effective ways of finding local support. A busy target audience like ours implies that the design should be focused on making the user quickly navigate to the exact thing they need. This suggests a simple design with common visual indications of a search function and where specific organizations’ information can be kept for the user’s use. We found a quick search function with the ability to filter charities by distance and focus to be the best-suited option. The charity profiles should have highly visible contact information and postings of what items and volunteering positions that charities need. These elements would assist users with limited time in finding charities based on their unique needs, interests, and skillsets. We also wanted to make the profile making process and posting to be intuitive for charities. By doing this, the app would be accessible to charity workers with any level of technical knowledge. Our goals were the words: simple, intuitive and fast.
 
 # Paper Prototyping
-
-
+![Paper Prototyping 1](/images/im1.png) 
+![Paper Prototyping 2](/images/im2.png)
+![Paper Prototyping 3](/images/im3.png)
+![Paper Prototyping 4](/images/im4.png)
 
 
 Screenshots of Paper Prototype
@@ -20,19 +22,26 @@ Our concept received a relatively positive reception. Our UI appears intuitive i
 # High-Fidelity Prototyping
 There were three components we chose to implement: data filtering, user forms, and user profiles.
 ### Data Filter
-
+![Search Bar](/images/p5_main.png)
+![Charity Cards](/images/p5_charity_list.png)
+![Filtered Charities](/images/p5_filter.png)
 https://github.com/HCI-Charity-Team/charity-site/tree/project_5
 
 The data filtering component was achieved by introducing a search bar and buttons that can further filter out the search result based on category. The buttons can be found under the search bar. By adding this component, we were able to introduce a search function that takes into account a user’s ideals or interests. Since the user can filter out nearby charities by general focus, they can choose a charity based on both location and general fit. This component, in general, helps support the task of searching for charities and selecting those that stick out the most for users.
 ### User Forms
-
+![Data Form](/images/p6_form.jpg)
+![Validation 1](/images/p6_validation_1.png)
+![Validation 2](/images/p6_validation_2.png)
 
 https://github.com/HCI-Charity-Team/charity-site/tree/project_6
 
 We also added user forms as a way for charities to create a new account. Unlike a general user, a charity needs to provide additional information to make its account. The user forms are accessible when one signs up as a charity. The component resembles the most typical forms to be simple and intuitive. The form also includes indicators of when the user hasn’t filled out necessary information or has provided invalid inputs. Through this component, we were able to introduce a charity-focus task of making a new account as a charity.
 ### User Profiles
-
-
+![Main Page](/images/p7_main_page.png)
+![Login 1](/images/p7_login_1.png)
+![Login 2](/images/p7_login_2.png)
+![Charity Profile](/images/p7_charity_profile.jpg)
+![User Profile](/images/p7_user_profile.jpg)
 
 
 https://github.com/HCI-Charity-Team/charity-site/tree/project_7
@@ -48,7 +57,7 @@ We were able to develop a prototype demonstrating the most basic features we wan
 https://github.com/HCI-Charity-Team/charity-site
 
 ### README
-https://github.com/HCI-Charity-Team/charity-site/blob/project_8/README.md
+https://github.com/HCI-Charity-Team/charity-site/blob/master/README.md
 
 ### Working Version (Github Sites) 
 https://hci-charity-team.github.io/charity-site/
