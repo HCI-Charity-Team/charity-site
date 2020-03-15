@@ -17,7 +17,7 @@ Screenshots of Paper Prototype
 Our concept received a relatively positive reception. Our UI appears intuitive in terms of making a new account and searching for charities. We still needed to make improvements on visibility, though. The charity cards needed clear indicators for clickability. One user took a while to realize that the card needed to be pressed to find out more information on the charity page. The cards’ general focus tags also need more visible. Users should discover what the charity is involved in and use this to decide which best interests them. This is important as we saw only one user take into account the charity's focus when clicking on a page. We also needed to find a way to draw more emphasis on the specific volunteer opportunities and donation items that the charity needs. We found that the paper prototype was a good start but there were small design changes that needed to be taken.
 	Based on the testers' reactions, we found that the design we had picked out was a solid start. The main alterations were creating more visibility of what is more clickable with shadowing and hovering indicators. We also decided on making the tags larger and creating filters under the search bar to let users know that sorting by interest was also an option alongside distance sorting. Otherwise, we decided to utilize the paper prototype’s design.
 
-# High-Fidelity Prototyping (P5, P6, & P7)
+# High-Fidelity Prototyping
 There were three components we chose to implement: data filtering, user forms, and user profiles.
 ### Data Filter
 
@@ -28,13 +28,14 @@ The data filtering component was achieved by introducing a search bar and button
 
 
 https://github.com/HCI-Charity-Team/charity-site/tree/project_6
-	We also added user forms as a way for charities to create a new account. Unlike a general user, a charity needs to provide additional information to make its account. The user forms are accessible when one signs up as a charity. The component resembles the most typical forms to be simple and intuitive. The form also includes indicators of when the user hasn’t filled out necessary information or has provided invalid inputs. Through this component, we were able to introduce a charity-focus task of making a new account as a charity.
+
+We also added user forms as a way for charities to create a new account. Unlike a general user, a charity needs to provide additional information to make its account. The user forms are accessible when one signs up as a charity. The component resembles the most typical forms to be simple and intuitive. The form also includes indicators of when the user hasn’t filled out necessary information or has provided invalid inputs. Through this component, we were able to introduce a charity-focus task of making a new account as a charity.
 ### User Profiles
 
 
 
 
-
+https://github.com/HCI-Charity-Team/charity-site/tree/project_7
 
 Lastly, we added user profiles to the website. This was achieved by introducing a sign-up/login method for general users, and having distinct profiles for charities and users. Unlike charities, the users can sign up by simply providing an email, name, and password. While the charity pages consist of general descriptions, contact information, and postings, a user profile functions more like a dashboard that a user can keep track of recent posts made by their favorite charities and can receive suggestions of what charities to look into. Thus, this final component allows the task of creating a new account as a user and look at what is currently on their dashboard.
 
@@ -43,7 +44,14 @@ We were able to develop a prototype demonstrating the most basic features we wan
 	Given the opportunity, we would have liked to have extended the prototype to feature how the charity would be able to edit their profile, add new posts, and indicate which out of the positions and items they need the most urgently. We could have also added how users could have been able to see their saved posts and keep track of their favorite charities. This would have needed charity cards and profiles to include buttons to add them to the user’s favorites as well as new pages for the user to look at saved posts and the list of favorite charities. We could have also featured user posts discussing their experience with a charity. Another great addition would have been making our app more accessible on devices other than computers. We also seem to have made the most changes based on users struggling with the visibility of certain features. So we could have further explored ways to make the site easier to utilize. While our site features the most basic elements of what we hoped out of the app, there still some features that we would have liked to implement further.
 
 # Links
-A link to your team’s repository
-A link to your README.md on Github
-A link to a working version of your prototype (or a video of it)
-Instructions for running your app (including how your prototype is best viewed).
+### REPO
+https://github.com/HCI-Charity-Team/charity-site
+
+### README
+https://github.com/HCI-Charity-Team/charity-site/blob/project_8/README.md
+
+### Working Version (Github Sites) 
+https://hci-charity-team.github.io/charity-site/
+
+### Instructions
+Best viewed on PCs/laptops on Chrome
