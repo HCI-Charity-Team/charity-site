@@ -45,16 +45,6 @@
 <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-database.js"></script>
 
 <script type="text/javascript" src="./js/firebase/init.js"></script>
-
-<script type="text/javascript">
-  firebase.auth().onAuthStateChanged(function(user) {
-    if(user) {
-      firebase.database().ref('users/' + user.uid).set({
-        username: user.displayName,
-        role: 'charity'
-      });
-    }
-  })
 </script>
 </body>
 </html>
